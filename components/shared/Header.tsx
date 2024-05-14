@@ -7,15 +7,18 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="w-full border-b">
+    <header className="w-full border-b border-green-500 bg-gradient-to-r from-violet-500 to-green-600">
       <div className="wrapper flex items-center justify-between">
-        <Link href="/" className="w-36">
+        <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/assets/images/logo.svg"
-            width={128}
-            height={38}
-            alt="Evently logo"
+            src="/assets/Trickal.png"
+            width={80}
+            height={80}
+            alt="Trickal logo"
           />
+          <span className="text-2xl font-bold tracking-tight">
+            Trickal Holdings
+          </span>
         </Link>
 
         <div className="flex w-32 justify-end gap-3">
