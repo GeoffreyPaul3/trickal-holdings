@@ -19,7 +19,7 @@ export default function Home() {
             </p>
 
             <Button size="lg" asChild className="button w-full sm:w-fit">
-              <Link href="#events">Get Started</Link>
+              <Link href="/dashboard">Get Started</Link>
             </Button>
           </div>
 
