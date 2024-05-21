@@ -20,9 +20,8 @@ import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { UserButton } from "@clerk/nextjs";
 import Cards from "@/components/shared/Cards";
-import DashboardNav from "./DashboardNav";
 
-export default function Dashboard() {
+const DashboardNav = () => {
   return (
     <div className="flex min-h-screen w-full flex-col">
       <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
@@ -129,7 +128,8 @@ export default function Dashboard() {
           <UserButton afterSignOutUrl="/" />
         </div>
       </header>
-      <Cards />
     </div>
-  );
+  )
 }
+
+export default DashboardNav
