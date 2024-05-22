@@ -26,7 +26,7 @@ import { Button } from "@/components/ui/button";
 
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { UserButton } from "@clerk/nextjs";
+
 
 
 
@@ -44,7 +44,7 @@ const CardsPage = () => {
           <span className="sr-only">Trickal Holdings</span>
         </Link>
         <Link
-          href="/"
+          href="/dashboard"
           className="text-foreground transition-colors hover:text-foreground"
         >
           Dashboard
@@ -68,7 +68,7 @@ const CardsPage = () => {
           Reports
         </Link>
         <Link
-          href="/dashboard"
+          href="/dashboard/promotion"
           className="text-muted-foreground transition-colors hover:text-foreground"
         >
           Promotions
@@ -94,7 +94,7 @@ const CardsPage = () => {
               <Package2 className="h-6 w-6" />
               <span className="sr-only">Trickal Holdings</span>
             </Link>
-            <Link href="#" className="hover:text-foreground">
+            <Link href="/dashboard" className="hover:text-foreground">
               Dashboard
             </Link>
             <Link
@@ -104,19 +104,19 @@ const CardsPage = () => {
               Gift-cards
             </Link>
             <Link
-              href="/"
+              href="/dashboard"
               className="text-muted-foreground hover:text-foreground"
             >
               Pricing
             </Link>
             <Link
-              href="/"
+              href="/dashboard"
               className="text-muted-foreground hover:text-foreground"
             >
               Reports
             </Link>
             <Link
-              href="/"
+              href="/dashboard/promotion"
               className="text-muted-foreground hover:text-foreground"
             >
               Promotions
@@ -135,7 +135,6 @@ const CardsPage = () => {
             />
           </div>
         </form>
-        <UserButton afterSignOutUrl="/" />
       </div>
     </header>
 

@@ -11,14 +11,13 @@ import {
   Users,
 } from "lucide-react";
 
-import Image from "next/image";
+
 
 import { Button } from "@/components/ui/button";
 
 
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { UserButton } from "@clerk/nextjs";
 import Cards from "@/components/shared/Cards";
 import DashboardNav from "./DashboardNav";
 
@@ -35,7 +34,7 @@ export default function Dashboard() {
             <span className="sr-only">Trickal Holdings</span>
           </Link>
           <Link
-            href="/"
+            href="/dashboard"
             className="text-foreground transition-colors hover:text-foreground"
           >
             Dashboard
@@ -53,13 +52,13 @@ export default function Dashboard() {
             Pricing
           </Link>
           <Link
-            href="/dashboard"
+            href="/dashboard/reports"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             Reports
           </Link>
           <Link
-            href="/dashboard"
+            href="/dashboard/promotion"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             Promotions
@@ -95,19 +94,19 @@ export default function Dashboard() {
                 Gift-cards
               </Link>
               <Link
-                href="/"
+                href="/dashboard"
                 className="text-muted-foreground hover:text-foreground"
               >
                 Pricing
               </Link>
               <Link
-                href="/"
+                href="/dashboard/reports"
                 className="text-muted-foreground hover:text-foreground"
               >
                 Reports
               </Link>
               <Link
-                href="/"
+                href="/dashboard/promotion"
                 className="text-muted-foreground hover:text-foreground"
               >
                 Promotions
@@ -126,7 +125,6 @@ export default function Dashboard() {
               />
             </div>
           </form>
-          <UserButton afterSignOutUrl="/" />
         </div>
       </header>
       <Cards />
